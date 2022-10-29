@@ -22,6 +22,6 @@ CREATE TABLE role(
     lastName VARCHAR(30),
     roleId INT,
     managerId INT,
-    FOREIGN KEY (roleId) REFERENCES role(id) ON DELETE SET NULL,
-    FOREIGN KEY (managerId) REFERENCES employee(id) ON DELETE SET NULL
-      );
+    FOREIGN KEY (roleId) REFERENCES role(id),
+    FOREIGN KEY (managerId) REFERENCES employee(id) 
+);
