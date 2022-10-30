@@ -1,4 +1,5 @@
 require('dotenv').config
+const mysql = require("mysql2");
 
 const db = mysql.createConnection(
     {
@@ -10,3 +11,5 @@ const db = mysql.createConnection(
     console.log(`Connected to the movies_db database.`)
   );
   
+
+  module.exports =db
